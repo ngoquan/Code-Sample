@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Ngô Văn Quân, This is Demo Introduction Slider"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/dot_light_screen1"
+        android:textStyle="bold"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
