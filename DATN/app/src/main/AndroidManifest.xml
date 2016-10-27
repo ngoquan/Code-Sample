@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ngovanquan_803656.datn" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--<supports-screens android:largeScreens="true"-->
+        <!--android:compatibleWidthLimitDp="320"-->
+        <!--android:largestWidthLimitDp="320"/>-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.menu.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddNewAndUpdateHoSoActivity"
+            android:label="@string/title_activity_add_new_and_update_ho_so"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.AddNewAndUpdateVanBanActivity"
+            android:label="@string/title_activity_add_new_and_update_van_ban"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.HoSoDetailActivity"
+            android:label="@string/title_activity_ho_so_detail"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.VanBanDetailActivity"
+            android:label="@string/title_activity_van_ban_detail"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.HoSoDetailActivity2"
+            android:label="@string/title_activity_ho_so_detail2"
+            android:theme="@android:style/Theme.Holo.Light.Dialog">
+        </activity>
+    </application>
+
+</manifest>

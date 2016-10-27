@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="8dp"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý Cấu hình hệ thống"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tên sở nội vụ :"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.7"
+                    android:id="@+id/txt_tenSNV"
+                    android:hint="Tên sở nội vụ..."
+                    android:background="@drawable/design_spinner"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tên chi cục văn thư:"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Tên chi cục văn thư ..."
+                    android:id="@+id/txt_tenCCVT"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ :"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Địa chỉ ..."
+                    android:id="@+id/txt_diaChi"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Điện thoại :"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Số điện thoại ..."
+                    android:id="@+id/txt_SDT"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email :"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Nhập địa chỉ Email ..."
+                    android:id="@+id/txt_email"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Website:"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Nhập tên website ..."
+                    android:id="@+id/txt_website"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tên phần mềm:"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Nhập tên phần mềm ..."
+                    android:id="@+id/txt_tenPM"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tr_1"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mật khẩu hiện tại:"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:inputType="textPassword"
+                    android:hint="Nhập mật khẩu hiện tại ..."
+                    android:id="@+id/txt_matKhau"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tr_2"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mật khẩu thay đổi:"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:inputType="textPassword"
+                    android:hint="Nhập mật khẩu thay đổi ..."
+                    android:id="@+id/txt_MKTD"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tr_3"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nhập lại mât khẩu:"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:inputType="textPassword"
+                    android:hint="Nhập lại mật khẩu ..."
+                    android:id="@+id/txt_NLMK"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu :"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <ImageButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_changePass"
+                android:src="@drawable/update"
+                android:layout_marginLeft="120dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="right">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_save"
+                android:id="@+id/btn_save"
+                android:background="@drawable/design_button"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_cancel"
+                android:id="@+id/btn_cancel"
+                android:background="@drawable/design_button"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

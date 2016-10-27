@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="ngovanquan_803656.datn.activity.VanBanDetailActivity"
+    android:background="#3C8DBC"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:background="#3C8DBC"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9.2"
+            android:text="CHI TIẾT VĂN BẢN"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:singleLine="true"
+            android:lines="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txt_header"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:src="@drawable/delete"
+            android:id="@+id/btn_close"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.8"
+        android:fillViewport="true"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECF0F5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Hồ sơ số:"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Hồ sơ số"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_hoSoSo"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Số KHVB:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:text="Số ký hiệu VB"
+                            android:id="@+id/txt_soKHVB"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Thời gian:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Thời gian"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_thoiGian"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Ngôn ngữ:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Ngôn ngữ"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_ngonNgu"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Tác giả:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Tác giả"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_tacGia"/>
+                    </TableRow>
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Mục lục số:"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Mục lục số"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_mucLucSo"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="KHTT:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="KHTT"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_KHTT"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Tờ sô:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Tờ số"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_toSo"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Số lượng tờ:"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Số lượng tờ"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_SLT"/>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Trích yếu:"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="Trích yếu"
+                    android:textColor="@color/black"
+                    android:id="@+id/txt_trichYeu"
+                    android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Bút tích:"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="Bút tích"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:id="@+id/txt_butTich"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Loại văn bản:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:text="Loại văn bản"
+                            android:id="@+id/txt_LVB"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Độ mật:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Độ mật"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_doMat"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Ghi chú:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Ghi chú"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_ghiChu"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Tài liệu DK:"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Không có file đính kèm"
+                            android:id="@+id/txt_TLDK"
+                            android:singleLine="true"
+                            android:textColor="@color/red"/>
+                    </TableRow>
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="TTVL:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:singleLine="true"
+                            android:text="Tình trạng vật lý"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_TTVL"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:singleLine="true"
+                            android:text="Độ tin cậy:"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:text="Độ tin cậy"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_DTC"/>
+                    </TableRow>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="Chế độ SD:"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:singleLine="true"
+                            android:text="Chế độ sử dụng"
+                            android:textColor="@color/black"
+                            android:id="@+id/txt_CDSD"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

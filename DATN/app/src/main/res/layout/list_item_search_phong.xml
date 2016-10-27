@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_STT"
+        android:text="STT"
+        android:layout_weight="1"
+        android:lines="2"
+        android:maxEms="10"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_maPhong"
+        android:text="Mã phông"
+        android:layout_weight="2"
+        android:lines="2"
+        android:maxEms="10"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:lines="2"
+        android:maxEms="10"
+        android:id="@+id/txt_tenPhong"
+        android:text="Tên phông"
+        android:singleLine="false"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_ghiChu"
+        android:layout_weight="3.5"
+        android:lines="2"
+        android:maxEms="10"
+        android:text="Ghi chú"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview" />
+
+</LinearLayout>

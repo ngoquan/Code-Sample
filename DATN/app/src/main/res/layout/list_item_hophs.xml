@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_STT"
+        android:text="STT"
+        android:layout_weight="1"
+        android:lines="2"
+        android:maxEms="10"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:lines="2"
+        android:maxEms="10"
+        android:id="@+id/txt_MaHopHS"
+        android:text="Mã Hộp HS"
+        android:singleLine="false"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_TenHopHS"
+        android:layout_weight="2"
+        android:lines="2"
+        android:maxEms="10"
+        android:text="Tên Hộp HS"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_TenPhong"
+        android:layout_weight="3"
+        android:lines="2"
+        android:maxEms="10"
+        android:text="Tên Phông"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_Status"
+        android:layout_weight="1"
+        android:lines="2"
+        android:layout_gravity="center"
+        android:src="@drawable/not_checked"
+        android:padding="3dp"
+        android:scaleType="centerInside"
+        />
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btn_Update"
+        android:src="@drawable/update"
+        android:layout_gravity="center"
+        />
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btn_Delete"
+        android:src="@drawable/delete"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

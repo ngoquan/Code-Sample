@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/hophs"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_item"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="Hop : 1234"
+        android:layout_below="@+id/img_item"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/text_color"
+        android:id="@+id/txt_item"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_button"
+       android:layout_below="@+id/txt_item"
+        android:visibility="gone">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/update"
+            android:scaleType="centerCrop"
+            android:id="@+id/btn_update" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info"
+            android:scaleType="centerCrop"
+            android:id="@+id/btn_info" />
+        <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete"
+        android:id="@+id/btn_delete"
+        android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

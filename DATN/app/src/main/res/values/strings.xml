@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">DATN</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_loai_hinh_tai_lieu">LoaiHinhTaiLieuActivity</string>
+    <string name="btn_addnew">Thêm mới</string>
+    <string name="btn_update">Cập nhật</string>
+    <string name="btn_search">Tìm kiếm</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="btn_check">Kiểm tra</string>
+    <string name="btn_save">Lưu thông tin</string>
+    <string name="message_input">Hãy nhập vào thông tin để thực hiện chức năng này</string>
+    <string name="title_loading">Loading ....</string>
+    <string name="message_loading">Please wait...!</string>
+    <string name="title_delete">Xác nhận xóa..!</string>
+    <string name="message_delete">Bạn có muốn xóa bản ghi này không?</string>
+    <string-array name="search_LHTL">
+        <item>Mã loại hình tài liệu</item>
+        <item>Tên loại hình tài liệu</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_DTC">
+        <item>Mã độ tin cậy</item>
+        <item>Tên độ tin cậy</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_DM">
+        <item>Mã độ mật</item>
+        <item>Tên độ mật</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_NN">
+        <item>Mã ngôn ngữ</item>
+        <item>Tên ngôn ngữ</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_TTVL">
+        <item>Mã TTVL</item>
+        <item>Tên TTVL</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_THBQ">
+        <item>Mã THBQ</item>
+        <item>Thêm THBQ</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_LVB">
+        <item>Mã LVB</item>
+        <item>Tên LVB</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_CDSD">
+        <item>Mã CDSD</item>
+        <item>Tên CDSD</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_CQLT">
+        <item>Mã CQLT</item>
+        <item>Tên CQLT</item>
+        <item>Địa chỉ</item>
+    </string-array>
+    <string-array name="search_phong">
+        <item>Mã phông</item>
+        <item>Tên phông</item>
+    </string-array>
+    <string-array name="search_HopHS">
+        <item>Mã Hộp HS</item>
+        <item>Tên Hộp HS</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_nhomND">
+        <item>Mã nhóm</item>
+        <item>Tên nhóm</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_ND">
+        <item>Tài khoản</item>
+        <item>Mã nhóm</item>
+        <item>Trạng thái</item>
+    </string-array>
+    <string-array name="search_TC">
+        <item>Tiêu đề hồ sơ</item>
+        <item>Trích yếu nội dung VB</item>
+    </string-array>
+    <string-array name="search_nangcao_hoso">
+        <item>Tiêu đề</item>
+        <item>Hồ sơ số</item>
+        <item>Mục lục số</item>
+    </string-array>
+    <string-array name="search_nangcao_vanban">
+        <item>Trích yếu nội dung</item>
+        <item>Số ký hiệu văn bản</item>
+        <item>Tác giả</item>
+    </string-array>
+    <string-array name="search_hoso_vanban">
+        <item>Hộp số</item>
+        <item>Hồ sơ số</item>
+        <item>Số ký hiệu văn bản</item>
+        <item>Tiêu đề hồ sơ</item>
+        <item>Trích yếu nội dung VB</item>
+    </string-array>
+    <string name="hint_username">Tài khoản...</string>
+    <string name="hint_password">Mật khẩu...</string>
+    <string name="message_username">Hãy nhập tài khoản...!</string>
+    <string name="message_password">Hãy nhập mật khẩu...!</string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!--&lt;!&ndash; Nav Drawer Menu Items &ndash;&gt;-->
+    <!--<string-array name="nav_drawer_items">-->
+        <!--<item >Home</item>-->
+        <!--<item >Find People</item>-->
+        <!--<item >Photos</item>-->
+        <!--<item >Communities</item>-->
+        <!--<item >Pages</item>-->
+        <!--<item >What\'s Hot</item>-->
+    <!--</string-array>-->
+
+    <!--&lt;!&ndash; Nav Drawer List Item Icons &ndash;&gt;-->
+    <!--&lt;!&ndash; Keep them in order as the titles are in &ndash;&gt;-->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_introduce</item>
+        <item>@drawable/ic_file_document</item>
+        <item>@drawable/ic_list</item>
+        <item>@drawable/ic_statistic</item>
+        <item>@drawable/ic_find</item>
+        <item>@drawable/ic_setting</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string name="title_activity_do_tin_cay">DoTinCayActivity</string>
+    <string name="title_activity_do_mat">DoMatActivity</string>
+    <string name="title_activity_ngon_ngu">NgonNguActivity</string>
+    <string name="title_activity_tinh_trang_vat_ly">TinhTrangVatLyActivity</string>
+    <string name="title_activity_che_do_su_dung">CheDoSuDungActivity</string>
+    <string name="title_activity_thoi_han_bao_quan">ThoiHanBaoQuanActivity</string>
+    <string name="title_activity_loai_van_ban">LoaiVanBanActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_login">DATN</string>
+    <string name="title_activity_add_new_and_update_ho_so">AddNewAndUpdateHoSoActivity</string>
+    <string name="title_activity_add_new_and_update_van_ban">AddNewAndUpdateVanBanActivity</string>
+    <string name="title_activity_ho_so_detail">HoSoDetailActivity</string>
+    <string name="title_activity_van_ban_detail">VanBanDetailActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_ho_so_detail2">HoSoDetailActivity2</string>
+</resources>

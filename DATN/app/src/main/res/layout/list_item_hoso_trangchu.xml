@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_STT"
+        android:text="STT"
+        android:layout_weight="1"
+        android:lines="2"
+        android:maxEms="10"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:lines="2"
+        android:maxEms="10"
+        android:id="@+id/txt_tenPhong"
+        android:text="Tên phông"
+        android:singleLine="false"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_hoSoSo"
+        android:layout_weight="1"
+        android:lines="2"
+        android:maxEms="10"
+        android:text="Hồ sơ số"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"
+        android:textColor="@color/text_color" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_tieuDeHS"
+        android:layout_weight="4"
+        android:lines="2"
+        android:maxEms="10"
+        android:text="Tiêu đề"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"
+        android:textColor="@color/text_color"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_SLT"
+        android:layout_weight="1"
+        android:lines="2"
+        android:maxEms="10"
+        android:text="Số lượng tờ"
+        android:padding="3dp"
+        android:background="@drawable/custom_textview"/>
+</LinearLayout>

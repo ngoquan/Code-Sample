@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:padding="8dp"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="ngovanquan_803656.datn.activity.qldm.NgonNguActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tên phông:"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <Spinner android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.7"
+                    android:id="@+id/spn_MaPhong"
+                    android:background="@drawable/design_spinner"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Tên hộp hồ sơ:"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_MaHopHS"
+                    android:visibility="gone"/>
+
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Tên hộp hồ sơ ..."
+                    android:id="@+id/txt_TenHopHS"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ghi chú:"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+                <EditText android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Ghi chú ..."
+                    android:id="@+id/txt_GhiChu"
+                    android:background="@drawable/design_edittext"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Trạng thái:"
+                    android:layout_weight="0.3"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_weight="0.7"
+                    android:id="@+id/cb_Active" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="right">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_addnew"
+                android:id="@+id/btn_AddNew"
+                android:background="@drawable/design_button"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_update"
+                android:id="@+id/btn_Update"
+                android:visibility="gone"
+                android:background="@drawable/design_button"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_cancel"
+                android:id="@+id/btn_Cancel"
+                android:background="@drawable/design_button"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:id="@+id/txt_SearchValue"
+                android:background="@drawable/design_edittext"
+                android:hint="Nhập vào giá trị tìm kiếm..."/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.4"
+                android:id="@+id/spn_SearchType"
+                android:background="@drawable/design_spinner"
+                android:layout_marginLeft="10dp"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="Tìm kiếm"
+                android:id="@+id/btn_Search"
+                android:background="@drawable/design_button"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="STT"
+                android:layout_weight="1"
+                android:lines="2"
+                android:textStyle="bold"
+                android:maxEms="10"
+                android:padding="3dp"
+                android:background="@drawable/custom_header_listview"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="2"
+                android:maxEms="10"
+                android:textStyle="bold"
+                android:text="Mã Hộp HS"
+                android:singleLine="false"
+                android:padding="3dp"
+                android:background="@drawable/custom_header_listview"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:lines="2"
+                android:maxEms="10"
+                android:textStyle="bold"
+                android:text="Tên Hộp HS"
+                android:padding="3dp"
+                android:background="@drawable/custom_header_listview"/>
+            <TextView
+            android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:lines="2"
+                android:textStyle="bold"
+                android:maxEms="10"
+                android:text="Tên phông"
+                android:padding="3dp"
+                android:background="@drawable/custom_header_listview"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="2"
+                android:maxEms="10"
+                android:text="Trạng thái"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_header_listview"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:lines="2"
+                android:maxEms="10"
+                android:text="Thao tác"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:background="@drawable/custom_header_listview"/>
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_HopHS"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_button"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="F"
+                android:id="@+id/btn_first"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="B"
+                android:id="@+id/btn_back"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="J"
+                android:id="@+id/btn_jump_back"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="1"
+                android:id="@+id/btn_1"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="2"
+                android:id="@+id/btn_2"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="3"
+                android:id="@+id/btn_3"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="4"
+                android:id="@+id/btn_4"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="5"
+                android:id="@+id/btn_5"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="J"
+                android:id="@+id/btn_jump_next"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="N"
+                android:id="@+id/btn_next"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="E"
+                android:id="@+id/btn_end"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
