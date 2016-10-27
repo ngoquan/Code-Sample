@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.ngoquan.demoslideuplayout.ControlActivity"
+    android:gravity="center_vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Library"
+        android:id="@+id/btn_useLib"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not use Library"
+        android:id="@+id/btn_notUseLib"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom Sheets"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_bottomSheets"/>
+
+</LinearLayout>
